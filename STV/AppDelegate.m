@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "STVImageProcessor.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    STVImageProcessor *p = [[STVImageProcessor alloc] init];
+    [p printImage:[UIImage imageNamed:@"lena.png"]];
+    
     return YES;
 }
 

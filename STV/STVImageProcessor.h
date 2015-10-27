@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface STVImageProcessor : NSObject
+
+-(void) printImage:(UIImage *)iamge;
 
 @end
