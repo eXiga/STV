@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class SaturatedBorders;
+
 @interface STVImageProcessor : NSObject
 
--(void) printImage:(UIImage *)iamge;
+- (instancetype)initWithImage:(UIImage *)image;
+- (UIImage *)saturateWithBorders:(SaturatedBorders *)borders;
 
 @end

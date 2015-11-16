@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0717BB01BF904F8007DFCD7 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = B0717BAF1BF904F8007DFCD7 /* UIImage+Pixels.m */; settings = {ASSET_TAGS = (); }; };
+		B0717BB41BF90D2A007DFCD7 /* HistogramLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = B0717BB31BF90D2A007DFCD7 /* HistogramLabels.m */; settings = {ASSET_TAGS = (); }; };
+		B0717BB71BF91343007DFCD7 /* SaturatedBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = B0717BB61BF91343007DFCD7 /* SaturatedBorders.m */; settings = {ASSET_TAGS = (); }; };
+		B0717BBA1BF91BA8007DFCD7 /* HistogramData.m in Sources */ = {isa = PBXBuildFile; fileRef = B0717BB91BF91BA8007DFCD7 /* HistogramData.m */; settings = {ASSET_TAGS = (); }; };
 		F6C7C70C1BE0087900856ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7C70B1BE0087900856ABC /* main.m */; };
 		F6C7C70F1BE0087900856ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7C70E1BE0087900856ABC /* AppDelegate.m */; };
 		F6C7C7121BE0087900856ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7C7111BE0087900856ABC /* ViewController.m */; };
@@ -18,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0717BAE1BF904F8007DFCD7 /* UIImage+Pixels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixels.h"; sourceTree = "<group>"; };
+		B0717BAF1BF904F8007DFCD7 /* UIImage+Pixels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixels.m"; sourceTree = "<group>"; };
+		B0717BB21BF90D2A007DFCD7 /* HistogramLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramLabels.h; sourceTree = "<group>"; };
+		B0717BB31BF90D2A007DFCD7 /* HistogramLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramLabels.m; sourceTree = "<group>"; };
+		B0717BB51BF91343007DFCD7 /* SaturatedBorders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaturatedBorders.h; sourceTree = "<group>"; };
+		B0717BB61BF91343007DFCD7 /* SaturatedBorders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturatedBorders.m; sourceTree = "<group>"; };
+		B0717BB81BF91BA8007DFCD7 /* HistogramData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramData.h; sourceTree = "<group>"; };
+		B0717BB91BF91BA8007DFCD7 /* HistogramData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistogramData.m; sourceTree = "<group>"; };
 		F6C7C7071BE0087900856ABC /* STV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6C7C70B1BE0087900856ABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6C7C70D1BE0087900856ABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,11 +56,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0717BAD1BF904DD007DFCD7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B0717BAE1BF904F8007DFCD7 /* UIImage+Pixels.h */,
+				B0717BAF1BF904F8007DFCD7 /* UIImage+Pixels.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B0717BB11BF90CFF007DFCD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0717BB21BF90D2A007DFCD7 /* HistogramLabels.h */,
+				B0717BB31BF90D2A007DFCD7 /* HistogramLabels.m */,
+				B0717BB51BF91343007DFCD7 /* SaturatedBorders.h */,
+				B0717BB61BF91343007DFCD7 /* SaturatedBorders.m */,
+				B0717BB81BF91BA8007DFCD7 /* HistogramData.h */,
+				B0717BB91BF91BA8007DFCD7 /* HistogramData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F6C7C6FE1BE0087900856ABC = {
 			isa = PBXGroup;
 			children = (
 				F6C7C7091BE0087900856ABC /* STV */,
 				F6C7C7081BE0087900856ABC /* Products */,
+				1C617FC81397FDB5F6E377B1 /* Pods */,
+				20657F3F9CEEDEBE626C2D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +99,7 @@
 		F6C7C7091BE0087900856ABC /* STV */ = {
 			isa = PBXGroup;
 			children = (
+				B0717BAD1BF904DD007DFCD7 /* Categories */,
 				F6E74DC11BE00AD900CD5A2C /* Processing */,
 				F6C7C70D1BE0087900856ABC /* AppDelegate.h */,
 				F6C7C70E1BE0087900856ABC /* AppDelegate.m */,
@@ -89,6 +126,7 @@
 		F6E74DC11BE00AD900CD5A2C /* Processing */ = {
 			isa = PBXGroup;
 			children = (
+				B0717BB11BF90CFF007DFCD7 /* Models */,
 				F6E74DC21BE00B5800CD5A2C /* STVImageProcessor.h */,
 				F6E74DC31BE00B5800CD5A2C /* STVImageProcessor.m */,
 			);
@@ -102,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6C7C71E1BE0087900856ABC /* Build configuration list for PBXNativeTarget "STV" */;
 			buildPhases = (
+				8C571D62D0396C0589ADD2EC /* Check Pods Manifest.lock */,
 				F6C7C7031BE0087900856ABC /* Sources */,
 				F6C7C7041BE0087900856ABC /* Frameworks */,
 				F6C7C7051BE0087900856ABC /* Resources */,
+				C5C724EEFD6164867E753B65 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0717BB01BF904F8007DFCD7 /* UIImage+Pixels.m in Sources */,
 				F6C7C7121BE0087900856ABC /* ViewController.m in Sources */,
+				B0717BBA1BF91BA8007DFCD7 /* HistogramData.m in Sources */,
 				F6C7C70F1BE0087900856ABC /* AppDelegate.m in Sources */,
+				B0717BB41BF90D2A007DFCD7 /* HistogramLabels.m in Sources */,
 				F6E74DC41BE00B5800CD5A2C /* STVImageProcessor.m in Sources */,
+				B0717BB71BF91343007DFCD7 /* SaturatedBorders.m in Sources */,
 				F6C7C70C1BE0087900856ABC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
