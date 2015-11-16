@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "STVImageProcessor.h"
+#import "SaturatedBorders.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +18,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    STVImageProcessor *p = [[STVImageProcessor alloc] init];
-    [p printImage:[UIImage imageNamed:@"lena.png"]];
-    
     return YES;
 }
 
